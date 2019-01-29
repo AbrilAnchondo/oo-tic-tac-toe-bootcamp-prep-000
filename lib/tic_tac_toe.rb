@@ -107,11 +107,11 @@ class TicTacToe
     end
   end
 
-  def winner(board)
-   if !won?(board)
+  def winner
+   if !won?
      return nil
     else
-      if board[won?(board)[0]] == "O"
+      if @board[won?[0]] == "O"
        return "O"
       else 
          return "X"
