@@ -123,13 +123,13 @@ class TicTacToe
    until over?
     turn
    end
-   if won? && winner == "X"
-    puts "Congratulations X"
+   if won?
+     puts "Congratulations #{winner}!"
    elsif draw?
-     over?
-     puts "Cat's Game!"
+    puts "Cat's Game!"
    end
-  end
+end
+
   
   
 end
