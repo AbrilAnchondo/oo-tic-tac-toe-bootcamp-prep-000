@@ -74,6 +74,20 @@ class TicTacToe
   turn_count % 2 == 0 ? "X" : "O"
   end
 
+  def won?(board)
+    WIN_COMBINATIONS.each do |win_combo|
+      first_index = win_combo[0]
+      second_index = win_combo[1]
+      third_index = win_combo[2]
+      
+      if board[first_index]  == "X" && board[second_index] == "X" && board[third_index] == "X"
+          return win_combo
+      elsif board[first_index] == "O" && board[second_index] == "O" && board[third_index] == "O"
+          return win_combo
+      end
+    end
+  return false
+  end
 
 
 
