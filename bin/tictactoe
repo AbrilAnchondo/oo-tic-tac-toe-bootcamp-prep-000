@@ -7,3 +7,4 @@ class TicTacToe
    TicTacToe.new
    end
 end
+play
